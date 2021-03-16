@@ -1,0 +1,68 @@
+.output {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  background: white;
+  border-radius: 1rem;
+  padding: 2.25rem 2rem;
+  box-shadow: 0 1rem 3rem rgba(black, 0.2);
+
+  @include tablet {
+    grid-template-columns: unset;
+    place-items: center;
+    gap: 1.5rem;
+    padding: 1.625rem 1.5rem 1.5rem;
+    max-width: 555px;
+  }
+
+  &.loading {
+    span {
+      display: none;
+    }
+
+    .loading-icon-container {
+      display: grid;
+    }
+  }
+
+  &-item {
+    padding-right: 1rem;
+
+    @include tablet {
+      padding-right: unset;
+      text-align: center;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba($Dark-Gray, 0.4);
+
+      @include tablet {
+        border-right: unset;
+      }
+    }
+  }
+
+  h4 {
+    margin-bottom: 0.75rem;
+
+    @include tablet {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  span {
+    display: block;
+    max-width: 10rem;
+
+    @include tablet {
+      max-width: unset;
+    }
+  }
+
+  .loading-icon-container {
+    margin-top: 1rem;
+  }
+}

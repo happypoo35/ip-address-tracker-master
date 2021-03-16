@@ -1,0 +1,30 @@
+.header {
+  padding-top: 1.75rem;
+  height: 280px;
+  background: no-repeat center/cover url("../../images/pattern-bg.png");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 1.375rem;
+
+  @include tablet {
+    margin-bottom: 1.75rem;
+  }
+}
+
+form {
+  width: min(555px, 100%);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 3rem;
+
+  @include tablet {
+    margin-bottom: 1.5rem;
+  }
+}

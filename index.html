@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/App.js" defer></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header pad">
+        <div class="container">
+          <a href="/">
+            <h1>IP Address Tracker</h1>
+          </a>
+          <form action="/" id="form">
+            <input
+              type="text"
+              id="inp"
+              placeholder="Search for any IP address or domain"
+              aria-label="input field"
+              autocomplete="off"
+              required
+            />
+            <button class="btn" aria-label="submit">
+              <img src="./images/icon-arrow.svg" alt="submit" />
+            </button>
+          </form>
+          <section class="output">
+            <div class="output-item">
+              <h4>IP Address</h4>
+              <span>192.212.174.101</span>
+              <div class="loading-icon-container">
+                <div class="loading-icon"></div>
+              </div>
+            </div>
+            <div class="output-item">
+              <h4>Location</h4>
+              <span>Brooklyn, NY 10001</span>
+              <div class="loading-icon-container">
+                <div class="loading-icon"></div>
+              </div>
+            </div>
+            <div class="output-item">
+              <h4>Timezone</h4>
+              <span>UTC -05:00</span>
+              <div class="loading-icon-container">
+                <div class="loading-icon"></div>
+              </div>
+            </div>
+            <div class="output-item">
+              <h4>ISP</h4>
+              <span>SpaceX Starlink</span>
+              <div class="loading-icon-container">
+                <div class="loading-icon"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
+      <div id="map"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: $Very-Dark-Gray;
+  border-radius: 0 0.875rem 0.875rem 0;
+  height: 3.625rem;
+  width: 3.625rem;
+  @extend %tr;
+
+  &:hover {
+    background: lighten($Very-Dark-Gray, 10%);
+  }
+}

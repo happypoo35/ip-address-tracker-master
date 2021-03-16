@@ -1,0 +1,43 @@
+.loading-icon-container {
+  width: fit-content;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.625rem;
+  display: none;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: $Dark-Gray;
+    border-radius: 50%;
+  }
+
+  &::before {
+    animation: 0.75s fade ease-out infinite;
+  }
+
+  &::after {
+    animation: 0.75s fade 0.5s ease-out infinite;
+  }
+
+  .loading-icon {
+    position: relative;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: $Dark-Gray;
+    border-radius: 50%;
+    animation: 0.75s fade 0.25s ease-out infinite;
+  }
+}
+
+@keyframes fade {
+  from {
+    background: $Dark-Gray;
+  }
+  to {
+    background: rgba($Dark-Gray, 0.2);
+  }
+}
