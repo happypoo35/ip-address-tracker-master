@@ -1,5 +1,7 @@
 # Frontend Mentor - Blogr landing page solution
 
+![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
+
 This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
@@ -21,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
+![screenshot](./design/screenshot.png)
 
 ### Links
 
@@ -34,4 +36,4 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Vanilla JS
-- [Sass](https://sass-lang.com/) - Sass
+- [Sass](https://sass-lang.com/)
